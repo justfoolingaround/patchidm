@@ -9,9 +9,9 @@ I'm basically going to be guiding you to do the latter option.
 
 # Overview
 - [Permanent* Patch](#permanent-patch)
-   - [Step 1: Download the registry](#step-1--download-the-registry)
-   - [Step 2: Edit the `hosts` file](#step-2--edit-the-hosts-file)
-- [Permanent* Patch (Automatic)](##permanent-patch-automatic-)
+   - [Step 1: Download the registry](#step-1-download-the-registry)
+   - [Step 2: Edit the `hosts` file](#step-2-edit-the-hosts-file)
+- [Permanent* Patch (Automatic)](##permanent-patch-automatic)
 
 ## Permanent* Patch
 
@@ -94,7 +94,7 @@ Now, you can just restart IDM and it should be good to go.
 
 For automatic patching, run the following command in an elevated PowerShell will. 
 
-> Note: Please be sure to review the contents of the [target script](./scripts/permanent_patch.ps1).
+>  **Note**: Please be sure to review the contents of the [target script](./scripts/permanent_patch.ps1).
 
 ```pwsh
 Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing 'https://github.com/justfoolingaround/patchidm/raw/master/scripts/permanent_patch.ps1') }"
