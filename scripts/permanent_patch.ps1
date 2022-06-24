@@ -41,7 +41,8 @@ $idmPatchRegistryUpstream = "https://raw.githubusercontent.com/J2TEAM/idm-trial-
 
 $tempFile = "idm_reg.reg"
 
-Invoke-WebRequest -UseBasicParsing $idmPatchRegistryUpstream -Headers @{"Accept" = "text/plain" } -OutFile $tempFile
+curl.exe -L $idmPatchRegistryUpstream -o $tempFile
+
 $registryData = Get-Content $tempFile
 
 $defaultFirstName = $env:USERNAME
