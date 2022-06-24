@@ -1,4 +1,4 @@
-<h1 align="center">Internet Download Manager - Manual Windows Patch</h1>
+<h1 align="center">Internet Download Manager - Windows Patch</h1>
 
 With the script kiddies of the internet on the loose, it is no longer safe to trust any "crack" or "patch" as they might be riddled with credentials and cookie grabbers. So, any normal user can do two of the following to use a premium software without any risk:
     
@@ -6,6 +6,12 @@ With the script kiddies of the internet on the loose, it is no longer safe to tr
 - Patch the license manually.
 
 I'm basically going to be guiding you to do the latter option.
+
+# Overview
+- [Permanent* Patch](#permanent-patch)
+   - [Step 1: Download the registry](#step-1--download-the-registry)
+   - [Step 2: Edit the `hosts` file](#step-2--edit-the-hosts-file)
+- [Permanent* Patch (Automatic)](##permanent-patch-automatic-)
 
 ## Permanent* Patch
 
@@ -84,8 +90,11 @@ attrib +r ${env:windir}/System32/drivers/etc/hosts
 ```
 
 Now, you can just restart IDM and it should be good to go.
+## Permanent* Patch (Automatic)
 
-For automatic patching, run the following command in PowerShell. Please be sure to review the contents of the [target script](./scripts/permanent_patch.ps1).
+For automatic patching, run the following command in an elevated PowerShell will. 
+
+> Note: Please be sure to review the contents of the [target script](./scripts/permanent_patch.ps1).
 
 ```pwsh
 Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing 'https://github.com/justfoolingaround/patchidm/raw/master/scripts/permanent_patch.ps1') }"
