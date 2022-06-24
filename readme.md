@@ -11,7 +11,7 @@ I'm basically going to be guiding you to do the latter option.
 - [Permanent* Patch](#permanent-patch)
    - [Step 1: Download the registry](#step-1-download-the-registry)
    - [Step 2: Edit the `hosts` file](#step-2-edit-the-hosts-file)
-- [Permanent* Patch (Automatic)](##permanent-patch-automatic)
+- [Permanent* Patch (Automatic)](#permanent-patch-automatic)
 
 ## Permanent* Patch
 
