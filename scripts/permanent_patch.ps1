@@ -49,9 +49,9 @@ $defaultFirstName = $env:USERNAME
 $defaultLastName = "(User)"
 $defaultEmail = "example@example.com"
 
-$firstName = promptIDMCredentials("First Name", $defaultFirstName)
-$lastName = promptIDMCredentials("Last Name", $defaultLastName)
-$email = promptIDMCredentials("Email", $defaultEmail)
+$firstName = promptIDMCredentials "First Name" $defaultFirstName
+$lastName = promptIDMCredentials "Last Name" $defaultLastName
+$email = promptIDMCredentials "Email" $defaultEmail
 
 
 $registryData = ((($registryData `
