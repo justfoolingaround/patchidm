@@ -97,5 +97,5 @@ For automatic patching, run the following command in an elevated PowerShell will
 >  **Note**: Please be sure to review the contents of the [target script](./scripts/permanent_patch.ps1).
 
 ```pwsh
-Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing 'https://github.com/justfoolingaround/patchidm/raw/master/scripts/permanent_patch.ps1') }"
+iwr 'https://github.com/justfoolingaround/patchidm/raw/master/scripts/permanent_patch.ps1' | iex
 ```
